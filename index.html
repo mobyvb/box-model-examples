@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Box Model Examples</title>
+    <style>
+      div:nth-child(odd) {
+        background-color: lightgreen;
+      }
+      div:nth-child(even) {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div style=''>No margin or padding defined</div>
+    <div style='padding: 10px'>No margin; padding defined in px</div>
+    <div style='padding: 5%'>No margin; padding defined in %</div>
+    <div style='padding: 10em'>No margin; padding defined in em</div>
+    <div style='padding: 5vw'>No margin; padding defined in vw</div>
+
+    <div style='margin: 10px'>No padding; margin defined in px</div>
+    <div style='margin: 5%'>No padding; margin defined in %</div>
+    <div style='margin: 10em'>No padding; margin defined in em</div>
+    <div style='margin: 5vw'>No padding; margin defined in vw</div>
+
+    <div style='margin: 10px; padding: 10px;'>Padding and margin defined in px</div>
+    <div style='margin: 5%; padding: 5%;'>Padding and margin defined in %</div>
+    <div style='margin: 10em; padding: 10em;'>Padding and margin defined in em</div>
+    <div style='margin: 5vw; padding: 5vw;'>Padding and margin defined in vw</div>
+  </body>
+</html>
