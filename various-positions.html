@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Box Model Examples</title>
+    <style>
+      .absolute-container {
+        position: relative;
+        border: 1px solid black;
+        height: 700px;
+        width: 100%;
+      }
+      .absolute-container div {
+        position: absolute;
+        background-color: lightgreen;
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid black;
+      }
+      .relative-container {
+        position: relative;
+        border: 1px solid black;
+        height: 1000px;
+        width: 100%;
+      }
+      .relative-container div {
+        position: relative;
+        background-color: lightblue;
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid black;
+      }
+
+      .abs-all {
+        top: 25%;
+        left: 25%;
+        bottom: 25%;
+        right: 25%;
+      }
+      .abs-all-but-top {
+        left: 25%;
+        bottom: 0;
+        right: 25%;
+      }
+      .abs-all-but-bottom {
+        left: 25%;
+        top: 0;
+        right: 25%;
+      }
+      .abs-all-but-left {
+        bottom: 25%;
+        right: 0;
+        top: 25%;
+      }
+      .abs-all-but-right {
+        bottom: 25%;
+        left: 0;
+        top: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class='absolute-container'>
+      <div class='abs-all'>Absolutely positioned, all sides set</div>
+      <div class='abs-all-but-top'>Absolutely positioned, all sides except top set</div>
+      <div class='abs-all-but-bottom'>Absolutely positioned, all sides except bottom set</div>
+      <div class='abs-all-but-left'>Absolutely positioned, all sides except left set</div>
+      <div class='abs-all-but-right'>Absolutely positioned, all sides except right set</div>
+    </div>
+    <div class='relative-container'>
+      <div class='rel-all'>Relatively positioned, all sides set</div>
+      <div class='rel-all-but-top'>Relatively positioned, all sides except top set</div>
+      <div class='rel-all-but-bottom'>Relatively positioned, all sides except bottom set</div>
+      <div class='rel-all-but-left'>Relatively positioned, all sides except left set</div>
+      <div class='rel-all-but-right'>Relatively positioned, all sides except right set</div>
+    </div>
+  </body>
+</html>
