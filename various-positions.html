@@ -17,20 +17,11 @@
         padding: 5px;
         border: 1px solid black;
       }
-      .relative-container {
-        position: relative;
+      .float-container {
         border: 1px solid black;
-        height: 1000px;
+        height: 200px;
         width: 100%;
       }
-      .relative-container div {
-        position: relative;
-        background-color: lightblue;
-        margin: 5px;
-        padding: 5px;
-        border: 1px solid black;
-      }
-
       .abs-all {
         top: 25%;
         left: 25%;
@@ -57,6 +48,44 @@
         left: 0;
         top: 25%;
       }
+      .float-left {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        float: left;
+        background-color: lightblue;
+        border: 1px solid black;
+      }
+      .float-right {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+        float: right;
+        background-color: lightblue;
+        border: 1px solid black;
+      }
+      .inline-block-container {
+        border: 1px solid black;
+        height: 500px;
+        width: 100%;
+      }
+      .left-align {
+        text-align: left;
+      }
+      .right-align {
+        text-align: right;
+      }
+      .inline-block {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        margin: 10px;
+        background-color: lightgreen;
+        border: 1px solid black;
+      }
     </style>
   </head>
   <body>
@@ -67,12 +96,21 @@
       <div class='abs-all-but-left'>Absolutely positioned, all sides except left set</div>
       <div class='abs-all-but-right'>Absolutely positioned, all sides except right set</div>
     </div>
-    <div class='relative-container'>
-      <div class='rel-all'>Relatively positioned, all sides set</div>
-      <div class='rel-all-but-top'>Relatively positioned, all sides except top set</div>
-      <div class='rel-all-but-bottom'>Relatively positioned, all sides except bottom set</div>
-      <div class='rel-all-but-left'>Relatively positioned, all sides except left set</div>
-      <div class='rel-all-but-right'>Relatively positioned, all sides except right set</div>
+    <div class='float-container'>
+      <div class='float-left'>Floated left</div>
+      <div class='float-right'>Floated right</div>
+    </div>
+    <div class='inline-block-container'>
+      <p class='right-align'>
+        some text
+        <div class='inline-block'>Inline block, right aligned</div>
+        some text
+      <p>
+      <p class='left-align'>
+        some text
+        <div class='inline-block'>Inline block, left aligned</div>
+        some text
+      <p>
     </div>
   </body>
 </html>
